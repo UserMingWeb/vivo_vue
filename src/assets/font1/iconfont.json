@@ -1,0 +1,135 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "952",
+      "name": "云上传",
+      "font_class": "yunshangchuan",
+      "unicode": "f0020",
+      "unicode_decimal": 983072
+    },
+    {
+      "icon_id": "5027",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "3448",
+      "unicode_decimal": 13384
+    },
+    {
+      "icon_id": "37276",
+      "name": "天猫提示-提醒",
+      "font_class": "tixing",
+      "unicode": "f006a",
+      "unicode_decimal": 983146
+    },
+    {
+      "icon_id": "55532",
+      "name": "微信",
+      "font_class": "88",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "136387",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "f0304",
+      "unicode_decimal": 983812
+    },
+    {
+      "icon_id": "572615",
+      "name": "NEW",
+      "font_class": "new",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "1038931",
+      "name": "评测",
+      "font_class": "pingce",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "1727450",
+      "name": "217时间",
+      "font_class": "shijian",
+      "unicode": "e8c5",
+      "unicode_decimal": 59589
+    },
+    {
+      "icon_id": "2675116",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "5063839",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "5406686",
+      "name": "班级信息",
+      "font_class": "banjixinxi",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "7905654",
+      "name": "学院配置",
+      "font_class": "xueyuanpeizhi",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "9656287",
+      "name": "公告",
+      "font_class": "gonggao",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "9671955",
+      "name": "排名",
+      "font_class": "paiming",
+      "unicode": "e8bf",
+      "unicode_decimal": 59583
+    },
+    {
+      "icon_id": "11776582",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "12593304",
+      "name": "学校",
+      "font_class": "xuexiao",
+      "unicode": "e6f6",
+      "unicode_decimal": 59126
+    },
+    {
+      "icon_id": "13744033",
+      "name": "vivo",
+      "font_class": "vivo",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "25670471",
+      "name": "上传文件",
+      "font_class": "shangchuanwenjian",
+      "unicode": "fde0",
+      "unicode_decimal": 64992
+    }
+  ]
+}

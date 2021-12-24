@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1640310063158') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yunshangchuan:before {
+  content: "\f0020";
+}
+
+.icon-shouji:before {
+  content: "\3448";
+}
+
+.icon-tixing:before {
+  content: "\f006a";
+}
+
+.icon-88:before {
+  content: "\e678";
+}
+
+.icon-xiazai:before {
+  content: "\f0304";
+}
+
+.icon-new:before {
+  content: "\e629";
+}
+
+.icon-pingce:before {
+  content: "\e635";
+}
+
+.icon-shijian:before {
+  content: "\e8c5";
+}
+
+.icon-sousuo:before {
+  content: "\e632";
+}
+
+.icon-gengduo:before {
+  content: "\e626";
+}
+
+.icon-banjixinxi:before {
+  content: "\e662";
+}
+
+.icon-xueyuanpeizhi:before {
+  content: "\e672";
+}
+
+.icon-gonggao:before {
+  content: "\e604";
+}
+
+.icon-paiming:before {
+  content: "\e8bf";
+}
+
+.icon-weibo:before {
+  content: "\e611";
+}
+
+.icon-xuexiao:before {
+  content: "\e6f6";
+}
+
+.icon-vivo:before {
+  content: "\e69a";
+}
+
+.icon-shangchuanwenjian:before {
+  content: "\fde0";
+}
+
