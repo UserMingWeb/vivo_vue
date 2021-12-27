@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-  <div>
+  <div class="foot">
     <div class="vivo_foot">
       <div class="vivo_foot_title">
         <a href="#"></a>
@@ -135,6 +135,10 @@ export default {
 </script>
 
 <style  scoped>
+.foot {
+  width: 100%;
+  float: left;
+}
 .vivo_foot {
   text-align: left;
   background-color: #242933;

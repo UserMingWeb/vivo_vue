@@ -10,7 +10,12 @@
           <p>{{ product.product1.title1 }}</p>
           <p>{{ product.product1.title2 }}</p>
           <div class="content_up_box1_title_info">
-            <a>进一步了解</a><span>立即购买</span>
+            <router-link
+              :to="{ name: 'Product', query: { id: 1 } }"
+              tag="a"
+              target="_blank"
+              >{{ product.product1.know }}</router-link
+            ><span>{{product.product1.buy}}</span>
           </div>
         </div>
 
@@ -26,7 +31,12 @@
           <p>{{ product.product2.title1 }}</p>
           <p>{{ product.product2.title2 }}</p>
           <div class="content_up_box2_title_info">
-            <a>进一步了解</a><span>立即购买</span>
+            <router-link
+              :to="{ name: 'Product', query: { id: 2 } }"
+              tag="a"
+              target="_blank"
+              >{{ product.product2.know }}</router-link
+            ><span>立即购买</span>
           </div>
         </div>
 
@@ -42,7 +52,12 @@
           <p>{{ product.product3.title1 }}</p>
           <p>{{ product.product3.title2 }}</p>
           <div class="content_up_box1_title_info">
-            <a>进一步了解</a><span>立即购买</span>
+            <router-link
+              :to="{ name: 'Product', query: { id: 3 } }"
+              tag="a"
+              target="_blank"
+              >{{ product.product3.know }}</router-link
+            ><span>立即购买</span>
           </div>
         </div>
 

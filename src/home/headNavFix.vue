@@ -9,7 +9,7 @@
         <div class="navFix_content_nav">
           <ul>
             <li v-for="(vi, index) in vivo" :key="index">
-              <a href="#">{{ vi }}</a>
+              <a href="vi.url">{{ vi.name }}</a>
             </li>
           </ul>
         </div>
@@ -26,16 +26,40 @@ export default {
   name: "HeadNavFix",
   data() {
     return {
-      vivo: {
-        NEX: "NEX系列",
-        X: "X系列",
-        S: "S系列",
-        T: "T系列",
-        iQOO: "iQOO手机",
-        smart: "智能硬件",
-        mall: "商城",
-        serve: "服务",
-      },
+      vivo: [
+        {
+          name: "NEX系列",
+          url: "/",
+        },
+        {
+          name: "X系列",
+          url: "/",
+        },
+        {
+          name: "S系列",
+          url: "/",
+        },
+        {
+          name: "T系列",
+          url: "/",
+        },
+        {
+          name: "iQOO系列",
+          url: "/",
+        },
+        {
+          name: "智能硬件",
+          url: "/",
+        },
+        {
+          name: "商城",
+          url: "/",
+        },
+        {
+          name: "服务",
+          url: "/",
+        },
+      ],
     };
   },
 };
@@ -48,8 +72,8 @@ export default {
   z-index: 999;
 }
 .navFix {
-    float: left;
-    width: 100%;
+  float: left;
+  width: 100%;
 }
 .navFix_content {
   float: left;
