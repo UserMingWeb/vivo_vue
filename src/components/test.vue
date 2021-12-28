@@ -206,11 +206,11 @@ export default {
   }
   .box1_left_learn span {
     display: inline-block;
-    width: 13.44444vw;
-    height: 4.27778vw;
-    line-height: 4.27778vw;
+    width: 10.44444vw;
+    height: 3.57778vw;
+    line-height: 3.57778vw;
     border-radius: 3vw;
-    font-size: 1.88889vw;
+    font-size: 1.48889vw;
     text-align: center;
     margin: 4.05556vw auto 1.05556vw;
     background: #415fff;
@@ -219,7 +219,7 @@ export default {
   }
   .buy {
     display: inline-block;
-    font-size: 1.88889vw;
+    font-size: 1.48889vw;
     line-height: 4.27778vw;
     font-weight: bold;
     margin-bottom: 2.61111vw;
