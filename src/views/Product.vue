@@ -17,16 +17,16 @@
           <div class="product_vivoPro_left_button">
             <ul>
               <li @mouseover="changShow(0)">
-                <img :src="msg[0].url" alt="" />
+                <img :src="msg[0].url" alt="v" />
               </li>
               <li @mouseover="changShow(1)">
-                <img :src="msg[1].url" alt="" />
+                <img :src="msg[1].url" alt="v" />
               </li>
               <li @mouseover="changShow(2)">
-                <img :src="msg[2].url" alt="" />
+                <img :src="msg[2].url" alt="v" />
               </li>
               <li @mouseover="changShow(3)">
-                <img :src="msg[3].url" alt="" />
+                <img :src="msg[3].url" alt="v" />
               </li>
             </ul>
             :
@@ -137,7 +137,7 @@ export default {
           },
         ],
       },
-      msg: "",
+      msg: "z",
     };
   },
   mounted() {
@@ -177,15 +177,30 @@ export default {
   position: relative;
   padding-left: 5%;
 }
+.product_vivoPro_left:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+  content: "";
+  display: block;
+  height: 0;
+  clear:both;
+  visibility: hidden;
+}
 .product_vivoPro_left .ul {
   overflow: hidden;
-  height: 520px;
 }
 .product_vivoPro_left ul li img {
   width: 100%;
 }
+.product_vivoPro_left ul:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+  content: "";
+  display: block;
+  height: 0;
+  clear:both;
+  visibility: hidden;
+}
 .product_vivoPro_left .product_vivoPro_left_button ul {
-  margin: 10% 78px;
+  margin: 10% 1%;
+  width: 95%;
+  padding-left: 5%;
 }
 .product_vivoPro_left .product_vivoPro_left_button ul li {
   display: inline-block;
@@ -197,7 +212,7 @@ export default {
   top: 0;
   right: 0;
   z-index: 2;
-  width: 80px !important;
+  width: 18% !important;
 }
 
 .product_vivoPro_right {

@@ -6,8 +6,10 @@ KISSY CSS Reset
 3. reset 期望提供一套普适通用的基础样式。但没有银弹，推荐根据具体需求，裁剪和修改后再使用。
 特色：1. 适应中文；2. 基于最新主流浏览器。
  */
-
- ul,ol {
+* {
+    box-sizing: border-box;
+}
+ul,ol {
     list-style: none;
 }
 img {
