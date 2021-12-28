@@ -5,7 +5,7 @@
       <ul class="menu1_list1">
         <li><a href="#">品牌</a><span>|</span></li>
         <li><a href="#">OriginOS</a><span>|</span></li>
-        <li><a href="#">体验店</a><span>|</span></li>
+        <li><router-link to="/test">体验店</router-link><span>|</span></li>
         <li><router-link to="/about">社区</router-link></li>
       </ul>
 
