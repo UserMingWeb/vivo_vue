@@ -40,6 +40,7 @@ export default {
     width: 100%;
     height: 900px;
     position: relative;
+    margin-bottom: 219px;
   }
   .nav .nav_content {
     width: 1300px;

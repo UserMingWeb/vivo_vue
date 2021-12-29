@@ -3,7 +3,7 @@
   <div id="content2" class="content">
     <div class="content_compare">
       <div class="content_title">
-        <p>哪款手机适合你？</p>
+        <p>哪款手机更适合你？</p>
         <a href="#">比较各款手机</a>
       </div>
       <div class="content_subject">
@@ -26,7 +26,7 @@
                 @click="chaangImg('product1', 3)"
                 style="background-color: #2C2E34"
               ></span>
-              <span>{{vivo.vivo1.name[type1-1]}}</span>
+              <span class="none">{{vivo.vivo1.name[type1-1]}}</span>
               <div class="content_subject_img_buy">{{vivo.vivo1.buy[type1-1]}}</div>
               <a href="#">了解更多</a>
             </li>
@@ -41,17 +41,17 @@
               ></span>
               <span
                 @click="chaangImg('product2', 2)"
-                style="background-color: 274E9A"
+                style="background-color: #274E9A"
               ></span>
               <span
                 @click="chaangImg('product2', 3)"
                 style="background-color: #2C2E34"
               ></span>
-              <span>{{vivo.vivo2.name[type2-1]}}</span>
+              <span class="none">{{vivo.vivo2.name[type2-1]}}</span>
               <div class="content_subject_img_buy">{{vivo.vivo2.buy[type2-1]}}</div>
               <a href="#">了解更多</a>
             </li>
-            <li>
+            <li id="small_li">
               <img src="./../assets/img/vivo_img7.png" alt="vivo" v-show="type3 == 1" />
               <img src="./../assets/img/vivo_img8.png" alt="vivo" v-show="type3 == 2" />
               <img src="./../assets/img/vivo_img9.png" alt="vivo" v-show="type3 == 3" />
@@ -68,7 +68,7 @@
                 @click="chaangImg('product3', 3)"
                 style="background-color: #2C2E34"
               ></span>
-              <span>{{vivo.vivo3.name[type3-1]}}</span>
+              <span class="none">{{vivo.vivo3.name[type3-1]}}</span>
               <div class="content_subject_img_buy">{{vivo.vivo3.buy[type3-1]}}</div>
               <a href="#">了解更多</a>
             </li>
@@ -78,8 +78,8 @@
     </div>
     <div class="content_part">
       <div class="content_title">
-        <p>哪款手机适合你？</p>
-        <a href="#">比较各款手机</a>
+        <p>精选配件</p>
+        <a href="#">为了更好的产品体验，我们为您精选了相关配件</a>
       </div>
       <div class="content_parts">
         <ul>
@@ -182,7 +182,7 @@ export default {
           name: ['星云','独白','至黑']
         },
         vivo2: {
-          buy: ['购买5499','购买7499','购买10499'],
+          buy: ['购买5499起','购买7499起','购买10499起'],
           name: ['旅程','旷野','至黑']
         },
         vivo3: {
@@ -196,7 +196,181 @@ export default {
 </script>
 
 <style  scoped>
-.content {
+@media screen and (max-width: 760px) {
+  .content {
+    background-color: #f5f7fa;
+  }
+  .content_compare {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .content_title {
+    width: 90%;
+    margin: 19.44444vw auto 9.16667vw;;
+    font-weight: bold;
+  }
+  .content_title p {
+    text-align: center;
+    font-size: 6.66667vw;
+    line-height: 6.66667vw;
+  }
+  .content_title a {
+    display: block;
+    margin-top: 4.72222vw;
+    font-size: 3.88889vw;
+  }
+  .content_subject {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .content_subject_img {
+    width: 100%;
+    height: 100.33333vw;
+    border-radius: 3.33333vw;
+    padding-top: 11.94444vw;
+    background-color: #fff;
+  }
+  .content_subject_img ul li {
+    display: inline-block;
+    width: 50%;
+    overflow: hidden;
+  }
+  .content_subject_img ul li img {
+    width: 100%;
+  }
+  .content_subject_img ul li span {
+    width: 5.5556vw;
+    height: 5vw;
+    line-height: 28px;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 3.88889vw;
+    font-size: 16px;
+    margin-right: 14px;
+    font-weight: 500;
+    color: rgb(110, 110, 110);
+    cursor: pointer;
+  }
+  .content_subject_img ul #small_li {
+    display: none;
+  }
+  .none {
+    display: none !important;
+  }
+  .content_subject_img_buy {
+    width: 37.22222vw;
+    height: 10.27778vw;
+    line-height: 10.27778vw;
+    margin: 3.88889vw auto;
+    border-radius: 5vw;
+    font-size: 3.88889vw;
+    background: #415fff;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+  .content_subject_img a {
+    font-size: 3.88889vw;
+    line-height: 5.27778vw;
+    font-weight: bold;
+  }
+  .content_part {
+    width: 100%;
+    position: relative;
+  }
+  .content_parts {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .content_parts_info {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 13.33333vw;
+  }
+  .content_parts_info_logo {
+    height: 3.33333vw;
+    margin-bottom: 1.11111vw;
+  }
+  .content_parts_info_logo img {
+    height: 100%;
+  }
+  .content_parts_li1 {
+    background: #fff;
+    display: block;
+    width: 100%;
+    height: 100.66667vw;
+    border-radius: 3.33333vw;
+    margin-bottom: 5.55556vw;
+    overflow: hidden;
+    position: relative;
+  }
+  .content_parts_info p {
+    font-size: 6.66667vw;
+    margin-bottom: 5vw;
+    margin: 2.555vw auto;
+    font-weight: bold;
+    width: 72.22222vw;
+  }
+  .content_parts_info a {
+    font-size: 3.88889vw;
+    line-height: 5.27778vw;
+    margin-bottom: 8.61111vw;
+    font-weight: bold;
+  }
+  .content_parts_info img {
+    vertical-align: middle;
+    margin-left: 2vw;
+  }
+  .content_parts_img {
+    width: 100%;
+    height: 100%;
+  }
+  .content_parts_img img {
+    width: 100%;
+  }
+  .content_parts_li2 {
+    background: #fff;
+    display: block;
+    width: 100%;
+    height: 96.66667vw;
+    border-radius: 3.33333vw;
+    margin-bottom: 5.55556vw;
+    overflow: hidden;
+    position: relative;
+  }
+  .content_parts_li1 .content_parts_img img {
+    transform: translateX(-10%);
+  }
+  .content_parts_li2 .content_parts_img img {
+    transform: translateX(-37%) translateY(25%);
+    width: 150%;
+  }
+  #part2 {
+    height: 39.16vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 760px){
+  .content {
   background-color: #f5f7fa;
 }
 .content .content_compare {
@@ -223,7 +397,7 @@ export default {
   background-color: white;
   border-radius: 24px;
   padding-top: 110px;
-  height: 580px;
+  height: 700px;
 }
 .content .content_subject .content_subject_img {
   margin: 0 75px;
@@ -433,5 +607,6 @@ export default {
 #bigbuy {
   height: 100px;
   width: 100px;
+}
 }
 </style>
