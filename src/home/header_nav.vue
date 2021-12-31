@@ -8,7 +8,8 @@
       </div>
     </div>
     <div class="nav_img">
-        <img src="../assets/img/vivo1.jpg" alt="vivo">
+        <img id='big_logo' src="../assets/img/vivo1.jpg" alt="vivo">
+        <img id="small_logo" src="../assets/img/vivo_logo.jpg" alt="v">
     </div>
     <div class="nav_footer">
       <div class="nav_footer_img">
@@ -36,10 +37,87 @@ export default {
 </script>
 
 <style  scoped>
+@media screen and (max-width: 1000px) {
+  .nav {
+    width: 100%;
+  }
+  .nav_content {
+    width: 100%;
+    height: 138.88889vw;
+    position: absolute;
+  }
+  .nav_content_logo {
+    position: absolute;
+    top: 23.1%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 4.44444vw;
+    z-index: 10;
+  }
+  .nav_content_logo img {
+    height: 7.77778vw;
+  }
+  .nav_content_logo_title {
+    line-height: 7.5vw;
+  }
+  .nav_img {
+    height: 138.88889vw;
+    width: 100%;
+    overflow: hidden;
+  }
+  .nav_img img {
+    width: 100%;
+    height: 100%;
+  }
+  #big_logo {
+    display: none;
+  }
+  .nav_footer {
+    position: relative;
+    width: 100%;
+    height: 40.4444vw;
+    border-radius: 3.3333vw;
+    background-color: white;
+    top: -9.7772vw;
+    z-index: 3;
+    overflow: hidden;
+  }
+  .nav_footer_img {
+    height: 44.44444vw;
+  }
+  .nav_footer_img ul {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 142.219px;
+    min-width: 100%;
+    text-align: center;
+    position: relative;
+    box-sizing: content-box;
+    transition-property: transform,left,top,-webkit-transform,-moz-transform,-o-transform;
+    transition-duration: 0s;
+    transform: translate3d(0px,0,0);
+    transition-timing-function: ease;
+  }
+  .nav_footer_img ul li {
+    padding-top: 7.77778vw;
+    width: 29.72222vw;
+    display: inline-block;
+    float: none;
+    text-align: center;
+    vertical-align: top;
+  }
+  .nav_footer_img ul li img {
+    width: 22.77778vw;
+    height: 22.77778vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   .nav {
     width: 100%;
     height: 900px;
     position: relative;
+    margin-bottom: 219px;
   }
   .nav .nav_content {
     width: 1300px;
@@ -107,4 +185,8 @@ export default {
   .nav .nav_footer .nav_footer_img ul li p {
     margin-top: 20px;
   }
+  #small_logo {
+    display: none;
+  }
+}
 </style>

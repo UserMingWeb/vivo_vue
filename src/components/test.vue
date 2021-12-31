@@ -29,12 +29,12 @@ export default {
 </script>
 
 <style  scoped>
-@media screen and (min-width: 1000px) {
-  #menu1 {
+#menu1 {
   width: 100%;
   background-color: rgb(42, 42, 46);
   color: rgb(185, 185, 185);
 }
+@media screen and (min-width: 1000px) {
   .menu1 {
     width: 90%;
     margin: 0 auto;
@@ -66,10 +66,5 @@ export default {
 .menu1 ul li span {
   margin:0 10px;
 }
-}
-@media screen and (max-width: 1000px) {
-  .menu1 {
-    display: none;
-  }
 }
 </style>
