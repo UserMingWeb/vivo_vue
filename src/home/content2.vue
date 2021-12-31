@@ -240,7 +240,7 @@ export default {
 </script>
 
 <style  scoped>
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1000px) {
   .content {
     background-color: #f5f7fa;
   }
@@ -401,7 +401,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 1000px) {
   .content {
     background-color: #f5f7fa;
   }

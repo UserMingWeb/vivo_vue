@@ -128,7 +128,7 @@ export default {
 .box1 {
   position: relative;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .box1 {
     width: 100%;
     margin: 9.4444vw auto;
@@ -198,7 +198,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .box1 {
     height: 34vw;
     margin: 8vw auto;

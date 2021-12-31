@@ -29,41 +29,47 @@ export default {
 </script>
 
 <style  scoped>
-#menu1 {
+@media screen and (min-width: 1000px) {
+  #menu1 {
   width: 100%;
   background-color: rgb(42, 42, 46);
+  color: rgb(185, 185, 185);
 }
-.menu1 {
-  width: 1300px;
-  margin: 0 auto;
-}
-.menu1 ul{
-  height: 35px;
+  .menu1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .menu1 ul {
+    display: inline-block;
+    height: 35px;
   line-height: 35px;
-}
-.menu1 .menu1_list1 {
-  display: inline-block;
-  width: 700px;
-  text-align: left;
-  padding-left: 50px;
-  box-sizing: border-box;
-}
-.menu1 .menu1_list2 {
-  display: inline-block;
-  width: 600px;
-  text-align: right;
-  padding-right: 50px;
-  box-sizing: border-box;
-}
-.menu1 ul li {
-  display: inline-block;
-  color: rgb(179, 177, 176);
-  font-size: 13px;
-}
-.menu1 ul li a:hover {
+  }
+  .menu1 li {
+    display: inline-block;
+  }
+  .menu1 .menu1_list1 {
+    float: left;
+  }
+  .menu1 .menu1_list2 {
+    float: right;
+  }
+  .menu1::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  .menu1 ul li a:hover {
   color: bisque;
 }
 .menu1 ul li span {
   margin:0 10px;
+}
+}
+@media screen and (max-width: 1000px) {
+  .menu1 {
+    display: none;
+  }
 }
 </style>

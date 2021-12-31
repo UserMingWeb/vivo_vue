@@ -6,6 +6,7 @@
 
 <script>
 import './assets/font1/iconfont.css'
+import './assets/font2/iconfont.css'
 
 export default {
   name: 'app',
